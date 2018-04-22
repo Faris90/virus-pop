@@ -20,8 +20,12 @@ Virus.prototype.feed = function(feeder,gameServer) {
 	
     // Check if the virus is going to explode
     if (this.mass >= gameServer.config.virusBurstMass) {
-        this.mass = gameServer.config.virusStartMass; // Reset mass
-        gameServer.shootVirus(this);
+         gameServer.removeNode(this); // Reset mass
+        gameServer.shootCell(this);
+    gameServer.shootCell(this);
+    gameServer.shootCell(this);
+    gameServer.shootCell(this);
+    gameServer.shootCell(this);
     }
 	
 }
