@@ -4,7 +4,7 @@ function Virus() {
     Cell.apply(this, Array.prototype.slice.call(arguments));
  this.setMoveEngineData(100, Infinity);
     this.cellType = 2;
-this.name = "feed me 7 times for mass"
+this.owner.name = "feed me 7 times for mass"
 }
 
 module.exports = Virus;
