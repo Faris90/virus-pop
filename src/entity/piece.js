@@ -6,6 +6,7 @@ function Virus() {
     this.cellType = 1;
 this.mass = 100;
 //this.color = {'r':245,'b':0,'g':0};
+	this.color = gameServer.getRandomColor();
 }
 
 module.exports = Virus;
