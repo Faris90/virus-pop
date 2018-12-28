@@ -1,5 +1,5 @@
 var Cell = require('./Cell');
-
+var gameServer = require('../GameServer');
 function Virus() {
     Cell.apply(this, Array.prototype.slice.call(arguments));
  this.angle = 3.14*Math.random();
